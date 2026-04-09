@@ -15,33 +15,49 @@ namespace CRUDMahasiswaADO
             InitializeComponent();
             conn = new SqlConnection(ConnectionString);
         }
-
-        private void btnClick_Connect(object sender, EventArgs e)
+        private void ConnectDataBase()
         {
+            try
+            {
+                if (conn.State == System.Data.ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
 
-        }
-
-        private void btnClick_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClick_Create(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClick_Update(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnClick_Delete(object sender, EventArgs e)
-        {
-
+                MessageBox.Show("Koneksi Berhasil");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Koneksi Gagal: " + ex.Message);
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
         {
 
         }
