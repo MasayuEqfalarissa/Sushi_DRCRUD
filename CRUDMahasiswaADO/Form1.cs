@@ -13,6 +13,7 @@ namespace CRUDMahasiswaADO
         public Form1()
         {
             InitializeComponent();
+            conn = new SqlConnection(ConnectionString);
         }
 
         private void btnClick_Connect(object sender, EventArgs e)
