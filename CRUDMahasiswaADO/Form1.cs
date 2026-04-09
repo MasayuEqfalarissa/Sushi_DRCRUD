@@ -6,6 +6,10 @@ namespace CRUDMahasiswaADO
 {
     public partial class Form1: Form
     {
+        private readonly SqlConnection conn;
+        private readonly string ConnectionString =
+            "Data Source=MASAYUU-DN5OL92\\MASAYU;Initial Catalog=DBAkademikADO;Integrated Security=True";
+
         public Form1()
         {
             InitializeComponent();
@@ -32,6 +36,11 @@ namespace CRUDMahasiswaADO
         }
 
         private void btnClick_Delete(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
