@@ -16,5 +16,10 @@ namespace CRUDMahasiswaADO
         {
             InitializeComponent();
         }
+
+        private void btnClick_Connect(object sender, EventArgs e)
+        {
+
+        }
     }
 }
