@@ -166,6 +166,7 @@
             this.btnLoad.TabIndex = 13;
             this.btnLoad.Text = "Menampilkan Data ";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnClick_Load);
             // 
             // btnCreate
             // 
@@ -175,6 +176,7 @@
             this.btnCreate.TabIndex = 14;
             this.btnCreate.Text = "Menambahkan Data";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnClick_Create);
             // 
             // btnUpdate
             // 
@@ -184,6 +186,7 @@
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Mengubah Data";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnClick_Update);
             // 
             // btnDelete
             // 
@@ -193,6 +196,7 @@
             this.btnDelete.TabIndex = 16;
             this.btnDelete.Text = "Menghapus Data";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnClick_Delete);
             // 
             // Form1
             // 
